@@ -1,0 +1,44 @@
+.services{
+    text-align: center;
+}
+.cards{
+    padding-top: 10%;
+    height: 100%;
+    width: 70%;
+    border-radius: 1em;
+    margin: 10px 20px 50px 10px;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cardisplay{
+    display: flex;
+    justify-content: space-between;
+}
+.allcard{
+    background-color: rgb(206, 206, 206);
+}
+
+.aboutP{
+    font-weight: 900;
+    font-size: 1.5em;
+}
+
+@media (max-width:800px){
+    .cards{
+        width: 50%;
+       margin-top: 20px;
+    }
+    .cardisplay{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center ;
+    }
+}
+
+@media (max-width: 400px){
+    .cards{
+        width: 80%;
+        font-size: small;
+    }
+}
