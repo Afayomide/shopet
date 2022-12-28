@@ -1,9 +1,9 @@
 *{
   font-family: Rubik,sans-serif;
+  scroll-behavior: smooth;
   }
-
   .content{
-    padding: 0 10%;
+    padding: 10em 0 0 0;
   }
   ul li::before {
     color: blue;

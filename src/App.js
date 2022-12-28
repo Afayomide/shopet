@@ -1,6 +1,7 @@
 import Aboutus from './components/about us/aboutus';
 import Services from './components/Services/Services';
 import Header from './components/header/header';
+import Footer from "./components/Footer/footer";
 import './App.css';
 
 function App() {
@@ -10,6 +11,8 @@ function App() {
 <Aboutus/>
 <Services/>
 </div>
+<Footer/>
+
 
   </>
   );

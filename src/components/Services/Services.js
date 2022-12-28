@@ -23,8 +23,8 @@ function Services () {
 
     return(
         <>
-        <div className="services">
-            <h3>
+        <div className="services reasons">
+            <h3 className="chooseUs">
                 Services
             </h3>
             <p>

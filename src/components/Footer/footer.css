@@ -1,0 +1,53 @@
+footer ul{
+    list-style-type: none;
+    padding: 0;
+}
+footer a {
+    color: rgb(107 114 128);
+
+}
+.shopetimage{
+    margin-bottom: 0%;
+    width: 40%;
+    height: 70%;
+}
+footer{
+    display:flex;
+    background-color: rgb(213, 217, 224);
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+}
+.icons{
+    display: flex;
+    width: 10%;
+    height: 20%;
+    justify-content: space-between;
+    margin-left: 40%;
+}
+.icons img {
+    width: 20px;
+    margin-right: 19px;
+}
+.LastSection{
+    border-top: solid grey 2px;
+    display:flex;
+    justify-content: space-around;
+    background-color: rgb(213, 217, 224);
+}
+
+@media(max-width:800px){
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .LastSection{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .footerLI{
+        margin-top: 20px;
+    }
+}
