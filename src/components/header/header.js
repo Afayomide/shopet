@@ -1,14 +1,41 @@
 import shopetlogo from "../../images/shopetlogo-removebg.png"
 import { useState } from "react"
 import "./header.css"
+import React from "react"
+
+
 
 function Header() {
+  const block = "block"
+  const none = "none"
 
-  function Form () {
-    const formDisplay={display: "none"}
+ const [changeDisplay, displayChanger] =useState(none)
+   
+   const handleDisplay=() =>{
+    Form()
+    displayChanger(block)
+  }
+  const handleDisplayagain =() =>{
+    displayChanger(none)
+  } 
+
+ const [showForm, formShower] = useState(true)
+
+  const handleForm=() => { 
+      formShower(!showForm)
+     
+  }
+  
+
+
+  function Form () {   
+
+  const formDisplay={display: changeDisplay}
     return(
     <>
     <div style={formDisplay} className="form">
+    <div className="form-content">
+    <button onClick={handleDisplayagain}>back</button>
         <h3>
             Join Waitlist
         </h3>
@@ -17,25 +44,24 @@ function Header() {
          you would be able 
         to manage and track your shipment service
         </p>
-        <p>Customer Type</p>
   
         <p>Company Name</p>
-        <input placeholder="Name"/>
+        <input name="name" placeholder="Name"/>
         
         <p>Phone Number</p>
-        <input placeholder="phone Number"/>
+        <input name="number" placeholder="phone Number"/>
   
         <p>Email Address</p>
-        <input placeholder="Enter Email Address"/>
+        <input name="email" placeholder="Enter Email Address"/>
+
+        <button type="submit" >Submit</button>
+        </div>
         </div>
     </>
     )
-  }
-  const [showForm, formShower] = useState(true)
 
-  const handleForm=() => {
-      formShower(!showForm)
   }
+ 
     return(
         <>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -53,11 +79,14 @@ function Header() {
         <a class="nav-link" href="#services">Services <span class="sr-only">(current)</span></a>
       </li>
     </ul>
-          <button onClick={handleForm} class="btn  bg-primary my-2 my-sm-0" type="submit">Join Waiting List</button>
+        <button onClick={() => {
+          handleDisplay()
+          handleForm()
+        }} class="btn  bg-primary my-2 my-sm-0" type="submit">Join Waiting List</button>
           
   </div>
 </nav>
-{showForm ? (<div>{Form()}</div>) : null}
+{!showForm ? (<div>{Form()}</div>) : null}
 </>
 )
 
