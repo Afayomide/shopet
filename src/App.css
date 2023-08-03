@@ -1,9 +1,10 @@
 *{
   font-family: Rubik,sans-serif;
   scroll-behavior: smooth;
+  list-style-type: none;
   }
   .content{
-    padding: 10em 0 0 0;
+    padding: 10em 5em 0 5em;
   }
   ul li::before {
     color: blue;

@@ -3,8 +3,25 @@
     height:6em;
 }
 .form button{
-margin: 20px 0;
-border-radius: .5em;
+margin: 10px 0;
+border-radius: .5em; 
+cursor: pointer;
+}
+.waiting-list{
+    width: 100%;
+    background-color: rgb(53, 53, 105);
+    font-family: Rubik,sans-serif;
+    height: 4em;
+   
+}
+.nav-link:hover{
+    font-size: larger;
+    color: blue !important;}
+.back{
+    margin-top: 20px;
+    font-size: 2em;
+    font-weight: 500;
+    cursor: pointer;
 }
 nav{
     position: fixed !important;
@@ -24,25 +41,49 @@ nav{
 }
 .form  input{
   width: 100%;
-  height: 3em;
+  height: 1em;
   border-radius: .5em;
   border: solid rgb(209 213 219) ;
-  padding: 4%;
+  padding: 3% 4%;
 }
 .form .form-content{
     width: 60%;
     margin: 0 30%;
 }
-
-@media (max-width:400px){
+.warning{
+    color: red;
+}
+.formName{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    
+}
+.formName button{
+    width: 40%;
+    text-align: center;
+    padding: .5em 0;
+    border-radius: 1em;
+    border: solid black;
+}
+.formName  button:hover{
+    cursor: pointer;
+    background-color: rgb(53, 53, 105);
+    color: white;
+}
+.formName button:active{
+    background-color:  rgb(53, 53, 105);
+}
+@media (max-width:600px){
     .form{
         top: 10vh;
         height: 90vh;
         width: 100%;
     }
-    .form .form-content{
-    }
     .form input{
-        height: 4em;
+        padding: 10% 4%;
+    }
+    form p {
+        font-size: smaller ;
     }
 }

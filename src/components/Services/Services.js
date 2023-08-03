@@ -9,8 +9,8 @@ import Data from "./servicesdata"
 function Services () {
     function Cards(props){
         return( 
-            <div className="allcard" key={props.img}>
-            <SwiperSlide >
+            <div className="allcard" >
+            <SwiperSlide key={props.id}>
            <div className="cards">
                 <img className="imageSrc" src={props.imageSrc}/>
                 <p className="aboutP">{props.aboutP}</p>
@@ -30,15 +30,18 @@ function Services () {
             <p>
             We prioritize our customers. We move twice as fast as our competitors, with a guaranteed
 delivery time of 3-7 days. However, our prices will not break the bank.
-We believe that shipping from the United States to Nigeria should not be prohibitively expensive.
+We believe that shipping from the United States to Liberia should not be prohibitively expensive.
 You should not be forced to ship via ocean freight or pay exorbitant handling fees.
             </p>
+            <div className="swiper">
             <Swiper
                   modules={[Navigation, Pagination, A11y]}
     spaceBetween={70}
       slidesPerView={1}
       pagination={{ clickable: true }}
       onSlideChange={() => console.log('slide change')}
+      centeredSlides = {false}
+      centerInsufficientSlides={true}
       onSwiper={(swiper) => console.log(swiper)}
       breakpoints={{
      // when window width is >= 640px
@@ -50,13 +53,14 @@ You should not be forced to ship via ocean freight or pay exorbitant handling fe
       }
     }}
     >    
-    <div className="cardisplay">
+    <div  className="cardisplay">
 
  {
   Data.map(Cards)
  } 
   </div>
     </Swiper>
+    </div>
         
             </div>
         </>

@@ -22,18 +22,26 @@
     font-weight: 900;
     font-size: 1.5em;
 }
-
+   .swiper{
+        width: 100%;
+    }
+    .imageSrc{
+      width: 30%;
+      height: 30%;
+    }
 @media (max-width:800px){
     .cards{
         width: 50%;
        margin-top: 20px;
     }
+    
     .cardisplay{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center ;
     }
+ 
 }
 
 @media (max-width: 400px){

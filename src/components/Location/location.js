@@ -7,7 +7,7 @@ function Location () {
     return(
         <>
 
-            <div className="map">
+            <div  className="map">
             <div className="services reasons">
             <h3 className="chooseUs">
                 Location

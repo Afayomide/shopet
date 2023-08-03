@@ -5,12 +5,14 @@ import 'swiper/swiper-bundle.min.css'
 import 'swiper/swiper.min.css'
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import Data from "./pricingData"
+import "./pricing.css"
+import PricingImage from "../../images/pricingimage.jpeg"
 
 function Pricing () {
     function Cards(props){
         return( 
-            <div className="allcard" key={props.id}>
-            <SwiperSlide  >
+            <div className="allcard" >
+            <SwiperSlide key={props.id} >
            <div className="cards">
                <p>Shipping From</p>
                 <p className="aboutP">{props.location}</p>
@@ -23,7 +25,7 @@ function Pricing () {
 
     return(
         <>
-        <div className="services reasons">
+        <div id="pricing" className="services reasons">
             <h3 className="chooseUs">
                 Pricing that is simple and transparent
             </h3>
@@ -31,8 +33,10 @@ function Pricing () {
             Pricing possibilities are limitless, and shipping is lightning fast.
 
 Simply contact the nearest office and fall in love with logistics all over again.
-            </p>
-            <Swiper
+            </p> 
+         <img className="pricingImage" src={PricingImage}/>
+
+            <Swiper 
                   modules={[Navigation, Pagination, A11y]}
     spaceBetween={70}
       slidesPerView={1}
@@ -49,17 +53,17 @@ Simply contact the nearest office and fall in love with logistics all over again
       }
     }}
     >    
-    <div className="cardisplay">
+    <div id="location" className="cardisplay">
 
  {
   Data.map(Cards)
  } 
   </div>
-    </Swiper>
-        
+    </Swiper>      
             </div>
         </>
     )
 }
+
 
 export default Pricing

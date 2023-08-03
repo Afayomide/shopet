@@ -2,12 +2,12 @@ const Data=[
     {
       id: 0,
       location: "USA to Liberia",
-      price: "$9.98 per lbs(pound)"
+      price: "$11.57 per lbs(pound)"
     },
     {
       id: 1,
       location: "Liberia to USA",
-      price: "$13.5 per lbs(pound)"
+      price: "$15.66 per lbs(pound)"
     },
 ]
 

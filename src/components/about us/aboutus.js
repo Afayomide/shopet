@@ -1,8 +1,8 @@
 import "./aboutus.css"
-import sealpeople from "../../images/seal.svg"
-import location from "../../images/location.svg"
-import customer from "../../images/customer.svg"
-import delivery from "../../images/delivery.svg"
+import sealpeople from "../../images/1.png"
+import location from "../../images/3.png"
+import customer from "../../images/6.png"
+import delivery from "../../images/5.png"
 
 function Aboutus() {
     return(
@@ -65,8 +65,8 @@ function Aboutus() {
                     </li>
                     <li>
                         <span className="head">Wider Reach</span><br/>
-                        Improved customer offering with shipping options from Minneapolis,
-                         Dallas and Houston to Nigeria. Other US States can reach out to us.
+                        Improved customer offering with shipping options from Minnesota,
+                         Dallas and Houston to Liberia. Other US States can reach out to us.
                     </li>
                 </ul>
              </div>
