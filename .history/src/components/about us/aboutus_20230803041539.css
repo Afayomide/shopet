@@ -115,7 +115,7 @@ ul{
 
     }
     .infodiv img{
-        margin-top: 5%;
+        margin-top: 15%;
      width: 4em;
      height: 4em;
     }
@@ -125,10 +125,7 @@ ul{
     .services{
         margin: 20px 20px;
    }
-   .num{
+   .numNtext p{
     font-size: 15px;
-   }
-   .greytext{
-    font-size: 12px;
    }
 }

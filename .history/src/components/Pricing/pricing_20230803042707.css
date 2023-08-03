@@ -8,7 +8,7 @@
 
 @media(max-width: 500px){
     .pricingImage{
-        width: 100%;
-        height: 25em;
+        width: 90%;
+        height: 20em;
     }
 }

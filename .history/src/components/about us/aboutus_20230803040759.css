@@ -29,7 +29,7 @@
 .infodiv img{
     width: 20%;
     height: 60%;
-    margin-top: 5%;
+    margin-top: 10em;
 }
 .first-button{
     background-color: rgb(53, 53, 121);
@@ -93,7 +93,7 @@ ul{
         flex-direction: column;
     }
     .infodiv img{
-        margin-top: 5%;
+        margin-top: 0%;
     }
     .first-section{
         display: flex;
@@ -114,21 +114,11 @@ ul{
         width: 100%;
 
     }
-    .infodiv img{
-        margin-top: 5%;
-     width: 4em;
-     height: 4em;
-    }
+   
     .chooseUs{
         font-size: 30px;
     }
     .services{
         margin: 20px 20px;
-   }
-   .num{
-    font-size: 15px;
-   }
-   .greytext{
-    font-size: 12px;
    }
 }

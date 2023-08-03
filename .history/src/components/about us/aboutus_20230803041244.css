@@ -115,20 +115,13 @@ ul{
 
     }
     .infodiv img{
-        margin-top: 5%;
-     width: 4em;
-     height: 4em;
+        margin-top: 15%;
+     
     }
     .chooseUs{
         font-size: 30px;
     }
     .services{
         margin: 20px 20px;
-   }
-   .num{
-    font-size: 15px;
-   }
-   .greytext{
-    font-size: 12px;
    }
 }
